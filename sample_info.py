@@ -1,7 +1,7 @@
 # Bot information
 SESSION = 'Media_search'
 USER_SESSION = 'User_Bot'
-API_ID = 11323775
+API_ID = '11323775'
 API_HASH = '09cbb16c3dc2d0eece774c0d0fdf2fb3'
 BOT_TOKEN = '5772002130:AAFSZNel0PbtaQD-yEFUwArox_cI0b7lw-A'
 USERBOT_STRING_SESSION = ''

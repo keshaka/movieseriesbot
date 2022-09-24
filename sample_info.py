@@ -18,7 +18,7 @@ AUTH_CHANNEL = [-1001752463426]
 
 # MongoDB information
 DATABASE_URI = "mongodb+srv://keshaka:alohomora@cluster0.hnqysha.mongodb.net/?retryWrites=true&w=majority"
-DATABASE_NAME = 'kesh'
+DATABASE_NAME = 'mangodb'
 COLLECTION_NAME = 'channel_files'  # If you are using the same database, then use different collection name for each bot
 
 PICS = 'https://telegra.ph/file/e3ef8ee5d5147e5267db7.jpg'

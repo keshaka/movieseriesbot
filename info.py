@@ -1,6 +1,6 @@
 import re
 from os import environ
-import sample_info
+from sample_info import *
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):

@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = 11323775
 API_HASH = '09cbb16c3dc2d0eece774c0d0fdf2fb3'
-BOT_TOKEN = '5772002130:AAFSZNel0PbtaQD-yEFUwArox_cI0b7lw-A'
+BOT_TOKEN = '5434914407:AAEgYL_9HOwE-PWS8hG7PqxxN93avyYt-BE'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -38,7 +38,7 @@ DATABASE_NAME = 'mangodb'
 COLLECTION_NAME = 'channel_files'
 
 # Others
-LOG_CHANNEL = 1001511799950
+LOG_CHANNEL = [-1001511799950]
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)

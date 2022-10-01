@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = 'Media_search'
 API_ID = int(11323775)
 API_HASH = '09cbb16c3dc2d0eece774c0d0fdf2fb3'
-BOT_TOKEN = '5434914407:AAEgYL_9HOwE-PWS8hG7PqxxN93avyYt-BE'
+BOT_TOKEN = '5602100686:AAEBZdcqi2KsPRLmSmMn1qlkzI9EuRUHCsI'
 
 # Bot settings
 CACHE_TIME = 300
@@ -28,7 +28,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = None
+AUTH_CHANNEL = -1001752463426
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information

@@ -17,18 +17,18 @@ API_HASH = '09cbb16c3dc2d0eece774c0d0fdf2fb3'
 BOT_TOKEN = '5434914407:AAEgYL_9HOwE-PWS8hG7PqxxN93avyYt-BE'
 
 # Bot settings
-CACHE_TIME = int(300)
-USE_CAPTION_FILTER = bool(False)
+CACHE_TIME = 300
+USE_CAPTION_FILTER = False
 PICS = 'https://telegra.ph/file/e3ef8ee5d5147e5267db7.jpg'
 
 # Admins, Channels & Users
-ADMINS = [int(1066891806)]
-CHANNELS = [int(-1001646992718)]
+ADMINS = [1066891806]
+CHANNELS = [-1001646992718]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
-AUTH_USERS = (auth_users + ADMINS) if auth_users else []
+AUTH_USERS = []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = [int(-1001752463426)]
+AUTH_CHANNEL = None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
@@ -37,7 +37,7 @@ DATABASE_NAME = 'mangodb'
 COLLECTION_NAME = 'Telegram_files'
 
 # Others
-LOG_CHANNEL = [int(-1001511799950)]
+LOG_CHANNEL = [-1001511799950]
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -48,7 +48,7 @@ IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌‌‌�
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
-INDEX_REQ_CHANNEL = int(-1001511799950)
+INDEX_REQ_CHANNEL = [-1001511799950]
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
